@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+}
+h1{
+    text-align: center;
+    padding: 20px 0px;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+}
+.para{
+    position: relative;
+    background-color: rgba(177, 171, 154, 0.863);
+    max-width: 30%;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
+.head{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px 20px;
+    border: 2px solid black;
+}
+.head1{
+    background-color: rgb(204, 96, 96);
+}
+.head2{
+    color: #fff;
+    background-color: rgb(99, 38, 30);
+}
+.head3{
+    background-color: rgb(226, 189, 109);
+}
+.p1{
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 991.5px) {
+    .section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .para{
+        max-width: 40%;
+    }
+    .para3{
+        max-width: 85%;
+    }
+}
+@media only screen and (max-width: 767.5px) {
+    .section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .para{
+        max-width: 80%;
+    }
+    .para3{
+        max-width: 80%;
+    }
+}
